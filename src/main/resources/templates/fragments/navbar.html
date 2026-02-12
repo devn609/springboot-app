@@ -1,0 +1,48 @@
+	
+	<nav th:fragment="header-nav" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #336699;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" th:href="@{/}">App</a>
+
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          	<a class="nav-link" th:classappend="${activePage == 'home'} ? 'active'" th:href="@{/}">Home</a>
+	        </li>
+			
+			<li class="nav-item">
+			  	<a class="nav-link" th:classappend="${activePage == 'courses'} ? 'active'"
+					href="/courseapp/courses">Courses</a>
+			</li>			
+			<li class="nav-item">
+			  	<a class="nav-link" th:classappend="${activePage == 'assignments'} ? 'active'" 
+					href="/courseapp/assignments">Assignments</a>
+			</li>
+			<li class="nav-item">
+			  	<a class="nav-link" th:classappend="${activePage == 'users'} ? 'active'" 
+					href="/courseapp/users">Users</a>
+			</li>
+
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" th:classappend="${activePage == 'admin'} ? 'active'"  
+			  		href="/admin" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+			    Admin
+			  </a>
+			  <ul class="dropdown-menu">
+			    <li><a class="dropdown-item" href="/profile">Profile</a></li>
+			    <li><a class="dropdown-item" href="#">Roles</a></li>
+			  </ul>
+			</li>
+	      </ul>
+		  
+		  <div style="float:right; width:20%">
+		  </div>
+			
+		  <div style="float:right;position:absolute;right:10px">
+			  <form class="d-flex">
+			    <input class="form-control me-2" type="search" placeholder="Search">
+			    <button class="btn btn-outline-light" type="submit">Search</button>
+			  </form>
+		  </div>
+	    </div>
+	  </div>
+	</nav>
