@@ -69,7 +69,7 @@ mvn spring-boot:run
 
 </li>
 
-The app will be available at: http://localhost:8060
+The app will be available at: http://localhost:8080
 (Appilication Port is set in resources/application.properties )
 
 ## 📁 Project Structure
