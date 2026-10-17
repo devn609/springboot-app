@@ -1,4 +1,4 @@
-# CourseApp - Spring Boot MVC Project
+# CourseApp - Spring Boot Project
 
 A Spring Boot web application using Thymeleaf for templating, Bootstrap for a responsive UI, and Apache Derby data store.
 
